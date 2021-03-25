@@ -98,7 +98,9 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
+    <Content Include="images\amazon-echo-dot-4th-gen-smart-speaker-w-alexa-w-clock-w-alexa-glacier-white-d-b07xj8c8f7.png" />
     <Content Include="images\amazon-echo-dot-4th-gen.png" />
+    <Content Include="images\echo-dot-with-clock-4th-gen-2020-official-render.png" />
     <Content Include="images\Echo_Logo.jpg" />
     <Content Include="images\mask-frog-concept1.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -239,7 +241,8 @@
     <Content Include="Scripts\jquery-3.0.0.min.map" />
     <Content Include="Views\Shared\_navbar.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Gallery.cshtml" />
+    <Content Include="Views\Home\Products.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
