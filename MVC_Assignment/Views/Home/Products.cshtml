@@ -11,13 +11,13 @@
     .h-0 {
         height: 800px;
     }
-    .discount{
-        top:20px;
-        right:10px;
-        width:80px;
-        height:30px;
+
+    .discount {
+        top: 20px;
+        right: 10px;
+        width: 80px;
+        height: 30px;
     }
-    
 </style>
 <div class="container-fluid">
 
@@ -32,26 +32,26 @@
         <div class="row ml-5 mt-5">
             @for (int i = 0; i < 3; i++)
             {
-            <div class="card mr-5 " style="width: 20rem;">
-                @if (@ViewBag.Prices[i] < 200)
-                {
-                    <div class="discount pb-3 position-absolute pt-1 rounded-pill bg-danger text-light text-center font-weight-bold">-30%</div>
-                }
+                <div class="card mr-5 " style="width: 20rem;">
+                    @if (@ViewBag.Prices[i] < 200)
+                    {
+                        <div class="discount pb-3 position-absolute pt-1 rounded-pill bg-danger text-light text-center font-weight-bold">-30%</div>
+                    }
 
-                <img src="@ViewBag.Images[i]" class="card-img-top m-3 w-auto" alt="...">
-                <div class="card-body">
+                    <img src="@ViewBag.Images[i]" class="card-img-top m-3 w-auto" alt="...">
+                    <div class="card-body">
 
 
-                    <h5 class="card-title">Amazon Echo Dot (4th Gen) Smart Speaker with Clock and Alexa</h5>
-                    <h4 class=" my-3 text-primary">
+                        <h5 class="card-title"> <span class="font-weight-bold text-capitalize text-info" >[ @ViewBag.Colors[i] ] </span>  Amazon Echo Dot (4th Gen) Smart Speaker with Clock and Alexa</h5>
+                        <h4 class=" my-3 text-primary">
 
-                        @ViewBag.Prices[i]$
-                    </h4>
-                    <a href="#" class="btn btn-dark text-light">Shop</a>
+                            @ViewBag.Prices[i]$
+                        </h4>
+                        <a href="#" class="btn btn-dark text-light">Shop</a>
+                    </div>
                 </div>
-            </div>
             }
-           
+
             <!--   <div class="col-3">
                 <div class="card " style="width: 20rem;">
                     <img src="~/images/amazon-echo-dot-4th-gen.png" class="card-img-top m-3 w-auto" alt="...">
